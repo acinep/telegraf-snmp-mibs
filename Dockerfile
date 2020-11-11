@@ -10,7 +10,7 @@ echo "deb http://deb.debian.org/debian stretch-updates main contrib non-free" >>
 RUN apt-get update && apt-get install -y unzip snmp-mibs-downloader 
 
 RUN wget https://global.download.synology.com/download/Document/Software/DeveloperGuide/Firmware/DSM/All/enu/Synology_MIB_File.zip -O Synology_MIB_File.zip && \
-unzip juniper-mibs-17.4R2.4.zip 
+unzip Synology_MIB_File.zip
 
 RUN mv Synology_MIB_File/* /usr/share/snmp/mibs/
 
